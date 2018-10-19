@@ -1,0 +1,113 @@
+/* Excelliarmus - Your tiny excel generator. */
+/* Michele LEO 2018 */
+/* github.com/leodau */
+
+html, body {
+	margin: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	cursor: default;
+	font-family: 'Roboto', sans-serif!important;
+}
+
+::selection {
+	background: #6bbcff;
+	color: rgb(255, 255, 255);
+	font-style: italic;
+}
+
+h1, h2 {
+	color: rgba(46, 46, 46, 0.993);
+}
+
+h1 {
+	font-size: 50px;
+}
+
+a {
+	color: rgb(51, 130, 194);
+}
+
+svg {
+	position: fixed;
+	z-index: -100;
+	top: 0;
+	transform: rotate(45deg);
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+section {
+	width: auto;
+	margin-top: 20px;
+}
+
+section:last-of-type {
+	opacity: 0.8;
+	position: fixed;
+	bottom: 0;
+}
+
+section:last-of-type:hover {
+	opacity: 1;
+}
+
+header {
+	width: 100vw;
+	text-align: center;
+}
+
+article {
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 8px;
+	padding: 20px;
+	margin: 20px;
+	border: 2px solid rgba(185, 185, 185, 0.027);
+	box-shadow: 0 5px 20px rgba(111, 111, 111, 0.05);
+}
+
+section:last-of-type {
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 8px;
+	padding: 5px;
+	margin: 5px;
+	border: 2px solid rgba(185, 185, 185, 0.027);
+	box-shadow: 0 5px 20px rgba(111, 111, 111, 0.05);
+}
+
+article h2 {
+	display: inline-block;
+	margin-right: 25px;
+	line-height: .1em;
+}
+
+button {
+	height: 40px;
+	line-height: 40px;
+	padding: 0 14px;
+	box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+	background: rgba(107, 188, 255, 1);
+	color: white;
+	border-radius: 4px;
+	text-transform: uppercase;
+	letter-spacing: .025em;
+	text-decoration: none;
+	border: none;
+	float: right;
+	font-family: 'Roboto', sans-serif!important;
+	transition: all .15s ease!important;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+button:hover {
+	background: rgba(123, 196, 255, 0.75);
+	transform: translateY(-2px);
+}
